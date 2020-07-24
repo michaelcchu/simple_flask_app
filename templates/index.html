@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Dominion</title>
+  </head>
+
+  <body>
+    <h1>Dominion</h1>
+
+    <form method="POST">
+      <input name="deck"/>
+    </form>
+
+    <p>Deck: {{ deck }}</p>
+
+    {% for i in range(money|length) %}
+      <p>${{ money[i] }}: {{ probs[i] }}</p>
+    {% endfor %}
+
+    {% if displayImage %}
+      <img src=" {{ url_for('static', filename = filename) }}"/>
+    {% endif %}
+  </body>
+</html>
