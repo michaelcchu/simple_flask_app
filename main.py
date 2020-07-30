@@ -17,6 +17,6 @@ def index():
 
     if request.method == 'POST':
         deck = json.loads(request.form['deck'].replace("'","\""))
-        [condensedMoney,condensedProbs,filename] = money.main(deck)
+        [condensedMoney,condensedProbs,filename] = money.main(deck,app)
         displayImage = True
     return render_template('index.html', filename=filename, deck=deck, money=condensedMoney, probs=condensedProbs, displayImage=displayImage)

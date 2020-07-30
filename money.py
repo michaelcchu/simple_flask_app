@@ -11,12 +11,12 @@ HANDSIZE = 5
 ## Generates a pie chart to visualize the probabilities. 
 ## Saves the chart in the images folder. 
 ## Returns the probabilities for each money amount, as well as the filename of the pie chart image.
-def main(deck):
+def main(deck,app):
   hands = generateHands(deck)
   probs = calcHandProbs(hands,deck)
   money = evaluateHands(hands)
   [condensedMoney,condensedProbs] = condense(money,probs) 
-  filePath = generatePieChart(deck,hands,condensedProbs,condensedMoney)
+  filePath = generatePieChart(deck,hands,condensedProbs,condensedMoney,app)
   return [condensedMoney,condensedProbs,filePath]
 
 ## Deck -> HandList
@@ -123,15 +123,21 @@ def condense(money,probs):
 
 ## Hand -> PieChart
 ## Produces a pie chart 
-def generatePieChart(deck,hands,probs,money):
+def generatePieChart(deck,hands,probs,money,app):
   plt.pie(probs, labels=money, autopct='%1.1f%%')
   plt.suptitle("Deck: "+str(deck)+"\nHow much money will I obtain from my next draw?")
 
   timeString = str(datetime.datetime.now())
   timeString = timeString.replace(':','.')
-  filename = 'pie_chart'+timeString+'.png'
-  plt.savefig('static/'+filename)
+  newFilename = 'pie_chart'+timeString+'.png'
+
+  # Removes all previous pie_chart images from the static folder 
+  for filename in os.listdir('static/'):
+    if filename.startswith('pie_chart'):  # not to remove other images
+      os.remove('static/' + filename)
+
+  plt.savefig(os.path.join(app.root_path,'static/'+newFilename))
   plt.clf()
-  return filename
+  return newFilename
 
 #main({"silver":1,"gold":3,"estate":4})

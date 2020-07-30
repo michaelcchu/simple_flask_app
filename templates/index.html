@@ -4,19 +4,20 @@
   </head>
 
   <body>
-    <h1>Dominion</h1>
-
+    <h1>Dominion Money Probability Calculator</h1>
+    <p>Instructions: Enter a deck of the form {"card_type":card_amount,"card_type":card_amount,..."}</p>
+    <p>Example: {"copper":7,"estate":3}</p>
     <form method="POST">
       <input name="deck"/>
     </form>
 
-    <p>Deck: {{ deck }}</p>
-
-    {% for i in range(money|length) %}
-      <p>${{ money[i] }}: {{ probs[i] }}</p>
-    {% endfor %}
-
     {% if displayImage %}
+      <p>Deck: {{ deck }}</p>
+
+      {% for i in range(money|length) %}
+        <p>${{ money[i] }}: {{ probs[i] }}</p>
+      {% endfor %}
+
       <img src=" {{ url_for('static', filename = filename) }}"/>
     {% endif %}
   </body>
