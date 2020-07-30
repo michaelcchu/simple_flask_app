@@ -132,9 +132,9 @@ def generatePieChart(deck,hands,probs,money,app):
   newFilename = 'pie_chart'+timeString+'.png'
 
   # Removes all previous pie_chart images from the static folder 
-  for filename in os.listdir('static/'):
+  for filename in os.listdir(os.path.join(app.root_path,'static/')):
     if filename.startswith('pie_chart'):  # not to remove other images
-      os.remove('static/' + filename)
+      os.remove(os.path.join(app.root_path,'static/'+filename))
 
   plt.savefig(os.path.join(app.root_path,'static/'+newFilename))
   plt.clf()
