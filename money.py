@@ -100,7 +100,11 @@ def evaluateHands(hands):
     if 'gold' in hand:
       sum += 3*hand['gold']
     if 'moneylender' in hand and 'copper' in hand:
-      sum += 2
+      if hand['moneylender']>0:
+        sum += 2
+    elif 'militia' in hand:
+      if hand['militia']>0:
+        sum += 2
     moneyList.append(sum)
   return moneyList
 
