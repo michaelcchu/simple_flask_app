@@ -12,8 +12,15 @@ HANDSIZE = 5
 ## Saves the chart in the images folder. 
 ## Returns the probabilities for each money amount, as well as the filename of the pie chart image.
 def main(deck,app):
-  hands = generateHands(deck)
-  probs = calcHandProbs(hands,deck)
+  # If deck has 5 or fewer cards, there is only one possible hand.
+  if nCards(deck) <= 5:
+      print("BAD!")
+      hands = [deck]
+      probs = [1]
+  else:
+    hands = generateHands(deck)
+    probs = calcHandProbs(hands,deck)
+  print(hands)
   money = evaluateHands(hands)
   [condensedMoney,condensedProbs] = condense(money,probs) 
   filePath = generatePieChart(deck,hands,condensedProbs,condensedMoney,app)
@@ -22,9 +29,6 @@ def main(deck,app):
 ## Deck -> HandList
 ## Generates a list of all possible hands that could be drawn from the deck.
 def generateHands(deck,base={}):
-  # If deck has less than 5 cards, returns the list containing the deck.
-  if len(deck) < 4:
-      return [deck]
   # Makes copies so as to not disturb the originals
   d = deck.copy()
   b = base.copy()
@@ -67,9 +71,6 @@ def spotsLeft(b):
 # HandList, Deck -> Probability
 ## Calculates the probability of drawing each possible hand.
 def calcHandProbs(hands, deck):
-  if len(deck) < 5:
-    return [1]
-
   probList = []
   for hand in hands:
     successes = 1
