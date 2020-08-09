@@ -1,26 +1,39 @@
 <html>
   <head>
     <title>Dominion Money Probability Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
-    <h1>Dominion Money Probability Calculator</h1>
-    <p>Instructions: Enter a deck of the form {"card_type":card_amount,"card_type":card_amount,..."}</p>
-    <p>"card_type": "copper", "silver", "gold", "estate", "duchy", "province", "chapel", "bureaucrat", "gardens", "militia", "moneylender", or "bandit"</p>
-    <p>card_amount: a nonnegative integer<p>
-    <p>Example: {"copper":7,"estate":3}</p>
-    <form method="POST">
-      <input name="deck"/>
-    </form>
+    <h1>Dominion Tool</h1>
+    <button onclick="openTab('mpc')">Money Probability Calculator</button>
+    <button onclick="openTab('css')">Comparative Strategy Simulator</button>
+    
+    <div id="mpc" class="tabcontent">
+      <p>Instructions: Enter a deck of the form {"card_type":card_amount,"card_type":card_amount,..."}</p>
+      <p>"card_type": "copper", "silver", "gold", "estate", "duchy", "province", "chapel", "bureaucrat", "gardens", "militia", "moneylender", or "bandit"</p>
+      <p>card_amount: a nonnegative integer<p>
+      <p>Example: {"copper":7,"estate":3}</p>
+      <form method="POST">
+        <input name="deck"/>
+      </form>
 
-    {% if displayImage %}
-      <p>Deck: {{ deck }}</p>
+      {% if displayImage %}
+        <p>Deck: {{ deck }}</p>
 
-      {% for i in range(money|length) %}
-        <p>${{ money[i] }}: {{ probs[i] }}</p>
-      {% endfor %}
+        {% for i in range(money|length) %}
+          <p>${{ money[i] }}: {{ probs[i] }}</p>
+        {% endfor %}
 
-      <img src=" {{ url_for('static', filename = filename) }}"/>
-    {% endif %}
+        <img src=" {{ url_for('static', filename = filename) }}"/>
+      {% endif %}
+    </div>
+
+    <div id="css" class="tabcontent">
+      <p>Instructions: </p>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
   </body>
 </html>
