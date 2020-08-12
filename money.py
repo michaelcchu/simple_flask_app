@@ -14,13 +14,11 @@ HANDSIZE = 5
 def main(deck,app):
   # If deck has 5 or fewer cards, there is only one possible hand.
   if nCards(deck) <= 5:
-      print("BAD!")
       hands = [deck]
       probs = [1]
   else:
     hands = generateHands(deck)
     probs = calcHandProbs(hands,deck)
-  print(hands)
   money = evaluateHands(hands)
   [condensedMoney,condensedProbs] = condense(money,probs) 
   filePath = generatePieChart(deck,hands,condensedProbs,condensedMoney,app)

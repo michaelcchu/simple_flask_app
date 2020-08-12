@@ -1,13 +1,13 @@
 <html>
   <head>
     <title>Dominion Money Probability Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
   </head>
 
   <body>
     <h1>Dominion Tool</h1>
-    <button onclick="openTab('mpc')">Money Probability Calculator</button>
-    <button onclick="openTab('css')">Comparative Strategy Simulator</button>
+    <button id="button1">Money Probability Calculator</button>
+    <button id="button2">Comparative Strategy Simulator</button>
     
     <div id="mpc" class="tabcontent">
       <p>Instructions: Enter a deck of the form {"card_type":card_amount,"card_type":card_amount,..."}</p>
@@ -25,7 +25,7 @@
           <p>${{ money[i] }}: {{ probs[i] }}</p>
         {% endfor %}
 
-        <img src=" {{ url_for('static', filename = filename) }}"/>
+        <img src="{{ url_for('static', filename = filename) }}"/>
       {% endif %}
     </div>
 
@@ -33,7 +33,6 @@
       <p>Instructions: </p>
     </div>
 
-    <script type="text/javascript" src="scripts.js"></script>
-
+    <script type="text/javascript" src="static/scripts.js"></script>
   </body>
 </html>
