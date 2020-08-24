@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Dominion Tool</title>
+</head>
+<body>
+  <h1>Dominion Tool</h1>
+  <button id="mpc-m">Money Probability Calculator - Mathematical</button>
+  <button id="mpc-s">Money Probability Calculator - Simulation</button>
+  <button id="hpc-m">Hand Probability Calculator - Mathematical</button>
+  <button id="sc-s">Strategy Comparison - Simulation</button>
+
+  <script>
+    document.getElementById("mpc-m").addEventListener("click",function(){document.location.href = '/mpc_m';})
+    document.getElementById("mpc-s").addEventListener("click",function(){document.location.href = '/mpc_s';})
+    document.getElementById("hpc-m").addEventListener("click",function(){document.location.href = '/hpc_m';})
+    document.getElementById("sc-s").addEventListener("click",function(){document.location.href = '/sc_s';})
+  </script>
+</body>
+<html>
