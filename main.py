@@ -3,7 +3,8 @@ matplotlib.use('Agg')
 
 from flask import Flask, request, render_template
 import json
-import money
+import mpc_mScript
+import hpc_mScript
 
 app = Flask(__name__)
 
@@ -17,7 +18,7 @@ def mpc_m():
 
     if request.method == 'POST':
         deck = json.loads(request.form['deck'].replace("'","\""))
-        [condensedMoney,condensedProbs,filename] = money.main(deck,app)
+        [condensedMoney,condensedProbs,filename] = mpc_mScript.main(deck,app)
         displayImage = True
     return render_template('mpc_m.html', filename=filename, deck=deck, money=condensedMoney, probs=condensedProbs, displayImage=displayImage)
 
@@ -25,9 +26,18 @@ def mpc_m():
 def mpc_s():
     return render_template('mpc_s.html')
 
-@app.route('/hpc_m')
+@app.route('/hpc_m', methods=['GET','POST'])
 def hpc_m():
-    return render_template('hpc_m.html')
+    hands = []
+    probs = []
+    deck = {}
+    display = False
+
+    if request.method == 'POST':
+        deck = json.loads(request.form['deck'].replace("'","\""))
+        [hands,probs] = hpc_mScript.main(deck,app)
+        display = True
+    return render_template('hpc_m.html', deck=deck, hands=hands, probs=probs, display=display)
 
 @app.route('/sc_s')
 def sc_s():
