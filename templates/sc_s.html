@@ -8,26 +8,25 @@
     <button id="home">Home</button>  
     
     <h2>Strategy Comparison - Simulation</h2>
-    
-    <div id="mpc" class="tabcontent">
-      <p>Instructions: Enter a deck of the form {"card_type":card_amount,"card_type":card_amount,..."}</p>
-      <p>"card_type": "copper", "silver", "gold", "estate", "duchy", "province", "chapel", "bureaucrat", "gardens", "militia", "moneylender", or "bandit"</p>
-      <p>card_amount: a nonnegative integer<p>
-      <p>Example: {"copper":7,"estate":3}</p>
-      <form method="POST">
-        <input name="deck"/>
-      </form>
+  
+    <p>Instructions: Choose a simulation and click run to see who wins!</p>
+    <form method="POST">
+      <select name="simChoice">
+        <option value="InvVilLabChapVSVilAmb">InvVilLabChapVSVilAmb</option>
+        <option value="InvVilLabChapVSVilAmb">InvVilLabChapVSVilAmb</option>
+        <option value="InvVilLabChapVSVilAmb">InvVilLabChapVSVilAmb</option>
+        <option value="InvVilLabChapVSVilAmb">InvVilLabChapVSVilAmb</option>
+      </select>
 
-      {% if displayImage %}
-        <p>Deck: {{ deck }}</p>
+      <input type="submit"/>
+    </form>
 
-        {% for i in range(money|length) %}
-          <p>${{ money[i] }}: {{ probs[i] }}</p>
-        {% endfor %}
-
-        <img src="{{ url_for('static', filename = filename) }}"/>
-      {% endif %}
-    </div>
+    {% if display %}
+      <p>Simulation: {{ request.form['simChoice'] }}</p>
+      {% for para in text %}
+        <p>{{para}}</p>
+      {% endfor %}
+    {% endif %}
 
     <script>
       document.getElementById("home").addEventListener("click",function(){document.location.href = '/..';})

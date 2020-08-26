@@ -658,3 +658,5 @@ class SingleGame:
         else:
             random.shuffle(self.deck2)
             
+    def getNumCurse1(self):
+        return self.numCurse1

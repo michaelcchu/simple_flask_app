@@ -5,6 +5,7 @@ from flask import Flask, request, render_template
 import json
 import mpc_mScript
 import hpc_mScript
+import sc_sScript
 
 app = Flask(__name__)
 
@@ -39,9 +40,15 @@ def hpc_m():
         display = True
     return render_template('hpc_m.html', deck=deck, hands=hands, probs=probs, display=display)
 
-@app.route('/sc_s')
+@app.route('/sc_s', methods=['GET','POST'])
 def sc_s():
-    return render_template('sc_s.html')
+    text = ""
+    display = False
+    if request.method == 'POST':
+        simChoice = request.form['simChoice']
+        text = sc_sScript.main(simChoice)
+        display = True
+    return render_template('sc_s.html', text=text, display=display, request=request)
 
 @app.route('/')
 def home():
