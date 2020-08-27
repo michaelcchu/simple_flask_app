@@ -6,6 +6,7 @@ import json
 import mpc_mScript
 import hpc_mScript
 import sc_sScript
+import mpc_sScript
 
 app = Flask(__name__)
 
@@ -23,9 +24,23 @@ def mpc_m():
         displayImage = True
     return render_template('mpc_m.html', filename=filename, deck=deck, money=condensedMoney, probs=condensedProbs, displayImage=displayImage)
 
-@app.route('/mpc_s')
+@app.route('/mpc_s', methods=['GET','POST'])
 def mpc_s():
-    return render_template('mpc_s.html')
+    condensedMoney = []
+    condensedProbs = []
+    filename = ''
+    deck = []
+    deckDictionary = {}
+    displayImage = False
+
+    if request.method == 'POST':
+        deckDictionary = json.loads(request.form['deck'].replace("'","\""))
+        for key,value in deckDictionary.items():
+            for i in range(int(value)):
+                deck.append(key)
+        [condensedMoney,condensedProbs,filename] = mpc_sScript.main(deck,deckDictionary,app)
+        displayImage = True
+    return render_template('mpc_s.html', filename=filename, deck=deckDictionary, money=condensedMoney, probs=condensedProbs, displayImage=displayImage)
 
 @app.route('/hpc_m', methods=['GET','POST'])
 def hpc_m():
