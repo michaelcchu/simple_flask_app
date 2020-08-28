@@ -1,198 +1,222 @@
 1: 8, 0, 0
-['victory-estate', 'victory-estate', 'treasure-copper', 'treasure-copper', 'treasure-copper']
-['victory-estate', 'victory-estate', 'treasure-copper', 'treasure-copper', 'treasure-copper']
+['victory-estate', 'treasure-copper', 'victory-estate', 'treasure-copper', 'victory-estate']
+['victory-estate', 'treasure-copper', 'victory-estate', 'treasure-copper', 'victory-estate']
 2: 8, 0, 0, 0
-['treasure-copper', 'treasure-copper', 'victory-estate', 'victory-estate', 'treasure-copper']
-['treasure-copper', 'treasure-copper', 'victory-estate', 'victory-estate', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-copper']
 3: 8, 1, 0
-['treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-copper', 'treasure-copper']
-['treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-copper', 'treasure-copper']
-4: 8, 0, 0, 0
-['treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-copper']
-['treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-copper']
+4: 8, 1, 0, 0
+['treasure-copper', 'treasure-copper', 'victory-estate', 'victory-estate', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'victory-estate', 'victory-estate', 'treasure-copper']
 5: 8, 1, 0
-['victory-estate', 'treasure-copper', 'action-ambassador', 'victory-estate', 'treasure-copper']
-play ambassador
-['treasure-copper', 'action-ambassador', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-silver']
+['treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-silver']
 6: 8, 1, 0, 0
-['treasure-copper', 'treasure-copper', 'treasure-copper', 'action-inventor', 'action-chapel']
+['action-inventor', 'treasure-copper', 'action-chapel', 'victory-estate', 'treasure-copper']
 play inventor
-['treasure-copper', 'treasure-copper', 'treasure-copper', 'action-inventor', 'action-chapel']
-7: 8, 1, 0
-['victory-estate', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-silver']
-['victory-estate', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-silver']
+['action-inventor', 'treasure-copper', 'action-chapel', 'victory-estate', 'treasure-copper']
+7: 8, 1, 1
+['victory-estate', 'victory-estate', 'treasure-copper', 'treasure-copper', 'action-ambassador']
+play ambassador
+['treasure-copper', 'treasure-copper', 'action-ambassador']
 8: 8, 1, 2, 0
-['treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper', 'victory-estate']
-['treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper', 'victory-estate']
+['treasure-copper', 'victory-estate', 'treasure-copper', 'victory-estate', 'treasure-copper']
+['treasure-copper', 'victory-estate', 'treasure-copper', 'victory-estate', 'treasure-copper']
 9: 8, 1, 1
-['treasure-copper', 'treasure-copper', 'treasure-silver', 'treasure-copper', 'treasure-copper']
-['treasure-copper', 'treasure-copper', 'treasure-silver', 'treasure-copper', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-silver', 'action-ambassador']
+play ambassador
+['victory-estate', 'treasure-silver', 'action-ambassador']
 10: 8, 1, 3, 0
-['treasure-copper', 'victory-estate', 'treasure-copper', 'victory-estate', 'action-chapel']
-play chapel
-['action-chapel']
-11: 8, 1, 3
-['victory-estate', 'treasure-copper', 'action-ambassador', 'treasure-copper', 'treasure-copper']
-play ambassador
-['victory-estate', 'action-ambassador', 'treasure-copper']
-12: 8, 1, 3, 0
-['treasure-copper', 'treasure-copper', 'action-inventor', 'victory-estate', 'action-village']
+['treasure-copper', 'treasure-copper', 'action-inventor', 'treasure-copper', 'action-village']
 play village
 play inventor
-['treasure-copper', 'treasure-copper', 'action-inventor', 'victory-estate', 'action-village', 'victory-estate']
-13: 8, 1, 3
-['action-village', 'treasure-copper', 'action-ambassador', 'treasure-silver', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'action-inventor', 'treasure-copper', 'action-village', 'victory-estate']
+11: 8, 1, 1
+['treasure-copper', 'treasure-copper', 'action-village', 'treasure-copper', 'treasure-copper']
 play village
-play ambassador
-['action-village', 'action-ambassador', 'treasure-silver', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'action-village', 'treasure-copper', 'treasure-copper', 'treasure-copper']
+12: 8, 1, 5, 0
+['action-village', 'treasure-copper', 'action-chapel', 'treasure-copper', 'victory-estate']
+play village
+play chapel
+['action-village', 'action-chapel']
+13: 8, 1, 2
+['treasure-copper', 'action-village', 'treasure-copper', 'action-village', 'treasure-silver']
+play village
+play village
+['treasure-copper', 'action-village', 'treasure-copper', 'action-village', 'treasure-silver', 'victory-estate', 'treasure-copper']
 14: 8, 1, 5, 0
-['treasure-copper', 'treasure-copper', 'action-village', 'action-village', 'treasure-copper']
+['treasure-copper', 'victory-estate', 'victory-estate', 'action-village', 'action-village']
 play village
 play village
-['treasure-copper', 'treasure-copper', 'action-village', 'action-village', 'treasure-copper', 'treasure-copper']
-15: 8, 1, 4
-['treasure-copper', 'action-village', 'victory-estate', 'action-village', 'treasure-copper']
+play village
+play inventor
+['treasure-copper', 'victory-estate', 'victory-estate', 'action-village', 'action-village', 'action-inventor', 'action-village', 'victory-estate']
+15: 8, 1, 3
+['action-ambassador', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'action-village']
 play village
 play village
 play ambassador
-['action-village', 'victory-estate', 'action-village', 'action-ambassador']
+['action-ambassador', 'treasure-copper', 'action-village', 'action-village', 'victory-estate']
 16: 8, 1, 6, 0
-['treasure-copper', 'victory-estate', 'action-village', 'treasure-copper', 'action-inventor']
+['treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'action-village']
+play village
+play chapel
+['action-village', 'action-chapel']
+17: 8, 1, 3
+['treasure-copper', 'treasure-copper', 'action-village', 'treasure-silver', 'action-village']
+play village
+play village
+play ambassador
+['action-village', 'treasure-silver', 'action-village', 'action-ambassador', 'victory-estate']
+18: 8, 1, 6, 0
+['action-village', 'action-village', 'victory-estate', 'action-village', 'victory-estate']
+play village
+play village
 play village
 play inventor
-['treasure-copper', 'victory-estate', 'action-village', 'treasure-copper', 'action-inventor', 'treasure-copper']
-17: 8, 1, 4
-['action-village', 'action-village', 'treasure-copper', 'treasure-silver', 'victory-estate']
-play village
+['action-village', 'action-village', 'victory-estate', 'action-village', 'victory-estate', 'victory-estate', 'treasure-copper', 'action-inventor']
+19: 8, 1, 3
+['action-village', 'treasure-copper', 'action-village', 'treasure-silver', 'action-village']
 play village
 play village
 play village
 play ambassador
-['action-village', 'action-village', 'treasure-copper', 'treasure-silver', 'action-village', 'action-village', 'action-ambassador']
-18: 8, 3, 6, 0
-['action-chapel', 'action-village', 'action-village', 'victory-estate', 'treasure-copper']
-play village
+['action-village', 'treasure-copper', 'action-village', 'treasure-silver', 'action-village', 'action-ambassador']
+20: 8, 1, 7, 0
+['treasure-copper', 'action-chapel', 'action-village', 'action-village', 'action-village']
 play village
 play village
 play village
 play chapel
-['action-chapel', 'action-village', 'action-village', 'action-village', 'action-village']
-19: 8, 1, 4
-['action-ambassador', 'action-village', 'treasure-copper', 'treasure-silver', 'action-village']
-play village
-play village
-play village
-play village
-play ambassador
-['action-ambassador', 'action-village', 'treasure-silver', 'action-village', 'action-village', 'action-village', 'treasure-silver']
-20: 8, 3, 6, 0
-['action-village', 'action-village', 'treasure-copper', 'treasure-copper', 'action-inventor']
-play village
-play village
-play inventor
-play inventor
-['action-village', 'action-village', 'treasure-copper', 'treasure-copper', 'action-inventor', 'action-inventor', 'treasure-copper']
-21: 8, 1, 4
-['treasure-silver', 'treasure-silver', 'action-village', 'action-village', 'treasure-silver']
-play village
+['action-chapel', 'action-village', 'action-village', 'action-village']
+21: 8, 1, 3
+['treasure-copper', 'action-village', 'action-village', 'treasure-silver', 'action-ambassador']
 play village
 play village
 play village
 play ambassador
-['treasure-silver', 'treasure-silver', 'action-village', 'action-village', 'treasure-silver', 'action-village', 'action-ambassador', 'action-village']
-22: 8, 4, 6, 2
-['treasure-copper', 'treasure-copper', 'treasure-copper', 'action-inventor', 'treasure-copper']
-play inventor
-['treasure-copper', 'treasure-copper', 'treasure-copper', 'action-inventor', 'treasure-copper']
-23: 8, 1, 4
-['treasure-silver', 'action-village', 'treasure-silver', 'action-village', 'action-ambassador']
+['action-village', 'action-village', 'treasure-silver', 'action-ambassador', 'treasure-silver', 'action-village']
+22: 8, 1, 7, 0
+['action-village', 'treasure-copper', 'action-village', 'victory-estate', 'victory-estate']
 play village
-play village
-play ambassador
-['treasure-silver', 'action-village', 'treasure-silver', 'action-village', 'action-ambassador', 'treasure-silver', 'treasure-gold']
-24: 7, 4, 6, 3
-['treasure-copper', 'action-inventor', 'action-village', 'action-laboratory', 'action-inventor']
-play village
-play lab
-play village
-play lab
 play village
 play village
 play inventor
-play inventor
-play inventor
-['treasure-copper', 'action-inventor', 'action-village', 'action-laboratory', 'action-inventor', 'action-laboratory', 'action-village', 'treasure-copper', 'treasure-copper', 'action-village', 'action-village', 'action-inventor', 'victory-estate']
-25: 7, 1, 4
-['action-village', 'action-village', 'action-village', 'treasure-silver', 'action-ambassador']
-play village
+['action-village', 'treasure-copper', 'action-village', 'victory-estate', 'victory-estate', 'action-inventor', 'action-village', 'victory-estate']
+23: 8, 1, 3
+['treasure-silver', 'action-village', 'action-village', 'treasure-silver', 'treasure-silver']
 play village
 play village
 play village
 play ambassador
-['action-village', 'action-village', 'action-village', 'treasure-silver', 'action-ambassador', 'action-village', 'treasure-gold', 'treasure-silver', 'victory-province']
-26: 7, 5, 6, 5
-['action-village', 'action-chapel', 'action-village', 'action-laboratory', 'treasure-copper']
+['treasure-silver', 'action-village', 'action-village', 'treasure-silver', 'treasure-silver', 'action-village', 'action-ambassador']
+24: 8, 2, 7, 0
+['action-village', 'action-chapel', 'victory-estate', 'victory-estate', 'treasure-copper']
+play village
+play chapel
+['action-village', 'action-chapel']
+25: 8, 1, 3
+['action-village', 'action-ambassador', 'action-village', 'treasure-silver', 'action-village']
 play village
 play village
-play lab
 play village
-play lab
+play ambassador
+['action-village', 'action-ambassador', 'action-village', 'treasure-silver', 'action-village', 'treasure-silver', 'treasure-silver', 'treasure-gold']
+26: 7, 2, 7, 0
+['action-village', 'action-village', 'action-inventor', 'action-village', 'action-village']
+play village
+play village
+play village
+play village
+play village
 play village
 play inventor
 play inventor
 play chapel
-['action-village', 'action-chapel', 'action-village', 'action-laboratory', 'action-laboratory', 'action-inventor', 'action-village', 'action-village', 'action-inventor']
-27: 7, 1, 4
-['treasure-silver', 'action-village', 'action-ambassador', 'treasure-silver', 'victory-province']
+['action-village', 'action-village', 'action-inventor', 'action-village', 'action-village', 'action-inventor', 'action-village', 'action-village', 'action-chapel']
+27: 7, 1, 3
+['action-village', 'action-village', 'treasure-silver', 'treasure-gold', 'action-village']
 play village
 play village
 play village
 play ambassador
-['treasure-silver', 'action-village', 'action-ambassador', 'treasure-silver', 'victory-province', 'action-village', 'action-village', 'treasure-silver']
-28: 7, 5, 6, 6
-['action-laboratory', 'treasure-copper', 'action-inventor', 'action-laboratory', 'victory-estate']
-play lab
+['action-village', 'action-village', 'treasure-silver', 'treasure-gold', 'action-village', 'victory-province', 'action-ambassador', 'treasure-silver']
+28: 7, 3, 7, 1
+['action-village', 'action-village', 'action-village', 'action-village', 'action-laboratory']
 play village
-play lab
+play village
+play village
+play village
+play village
+play village
 play village
 play lab
 play inventor
 play inventor
 play inventor
-['action-laboratory', 'treasure-copper', 'action-inventor', 'action-laboratory', 'victory-estate', 'treasure-copper', 'action-village', 'action-inventor', 'action-laboratory', 'action-village', 'action-inventor', 'treasure-copper']
-29: 7, 1, 4
-['action-village', 'treasure-gold', 'treasure-gold', 'victory-province', 'treasure-silver']
+play chapel
+['action-village', 'action-village', 'action-village', 'action-village', 'action-laboratory', 'action-inventor', 'action-village', 'action-village', 'action-chapel', 'action-village', 'action-inventor', 'action-inventor']
+29: 7, 1, 3
+['treasure-silver', 'action-village', 'treasure-gold', 'victory-province', 'action-village']
 play village
 play village
-['action-village', 'treasure-gold', 'treasure-gold', 'victory-province', 'treasure-silver', 'action-village', 'treasure-silver']
-30: 6, 7, 6, 7
-['action-village', 'action-village', 'action-laboratory', 'action-chapel', 'action-laboratory']
 play village
+['treasure-silver', 'action-village', 'treasure-gold', 'victory-province', 'action-village', 'treasure-gold', 'action-village', 'treasure-silver']
+30: 6, 4, 7, 3
+['action-inventor', 'action-laboratory', 'action-village', 'action-inventor', 'action-inventor']
+play village
+play lab
 play village
 play lab
 play village
 play village
-play lab
-play lab
-play lab
-play lab
 play village
 play village
-play inventor
+play village
+play lab
 play inventor
 play inventor
 play inventor
 play inventor
 play chapel
-['action-village', 'action-village', 'action-laboratory', 'action-chapel', 'action-laboratory', 'action-inventor', 'action-laboratory', 'action-village', 'action-inventor', 'action-village', 'action-inventor', 'action-laboratory', 'action-laboratory', 'action-inventor', 'action-inventor', 'action-village', 'action-village']
-31: 5, 1, 4
-['action-ambassador', 'action-village', 'treasure-silver', 'action-village', 'treasure-gold']
-play village
-play village
+['action-inventor', 'action-laboratory', 'action-village', 'action-inventor', 'action-inventor', 'action-chapel', 'action-village', 'action-laboratory', 'action-inventor', 'action-laboratory', 'action-village', 'action-village', 'action-village', 'action-village', 'action-village']
+31: 6, 1, 3
+['action-ambassador', 'treasure-silver', 'treasure-silver', 'treasure-gold', 'victory-province']
 play ambassador
-['action-ambassador', 'action-village', 'treasure-silver', 'action-village', 'treasure-gold', 'treasure-gold']
-32: 4, 8, 6, 7
-['action-laboratory', 'treasure-copper', 'action-inventor', 'action-laboratory', 'action-inventor']
+['action-ambassador', 'treasure-silver', 'treasure-silver', 'treasure-gold', 'victory-province']
+32: 6, 5, 7, 5
+['action-village', 'action-laboratory', 'action-village', 'action-inventor', 'action-inventor']
+play village
+play village
+play village
+play lab
+play lab
+play village
+play village
+play lab
+play village
+play lab
+play village
+play lab
+play inventor
+play inventor
+play inventor
+play inventor
+play inventor
+play chapel
+['action-village', 'action-laboratory', 'action-village', 'action-inventor', 'action-inventor', 'action-village', 'action-laboratory', 'action-laboratory', 'action-inventor', 'action-inventor', 'action-village', 'action-laboratory', 'action-village', 'action-laboratory', 'action-village', 'action-inventor', 'action-chapel', 'action-village']
+33: 5, 1, 3
+['action-village', 'action-village', 'treasure-silver', 'victory-province', 'treasure-gold']
+play village
+play village
+play village
+['action-village', 'action-village', 'treasure-silver', 'victory-province', 'treasure-gold', 'action-village', 'treasure-gold']
+34: 4, 7, 7, 7
+['action-laboratory', 'action-laboratory', 'action-village', 'action-laboratory', 'action-laboratory']
+play village
 play lab
 play village
 play village
@@ -203,9 +227,9 @@ play lab
 play village
 play lab
 play village
-play lab
 play village
 play lab
+play lab
 play inventor
 play inventor
 play inventor
@@ -213,4 +237,25 @@ play inventor
 play inventor
 play inventor
 play inventor
-['action-laboratory', 'treasure-copper', 'action-inventor', 'action-laboratory', 'action-inventor', 'action-village', 'action-village', 'action-inventor', 'action-village', 'action-inventor', 'action-laboratory', 'action-inventor', 'action-laboratory', 'action-village', 'action-inventor', 'action-laboratory', 'action-inventor', 'action-village', 'action-laboratory', 'action-village', 'action-inventor', 'action-laboratory', 'action-chapel', 'victory-province']
+play chapel
+['action-laboratory', 'action-laboratory', 'action-village', 'action-laboratory', 'action-laboratory', 'action-inventor', 'action-village', 'action-inventor', 'action-village', 'action-chapel', 'action-inventor', 'action-village', 'action-laboratory', 'action-inventor', 'action-inventor', 'action-inventor', 'action-village', 'action-laboratory', 'action-laboratory', 'action-village', 'action-village', 'action-inventor', 'victory-province']
+35: 1, 1, 3
+['treasure-silver', 'treasure-silver', 'victory-province', 'treasure-gold', 'action-ambassador']
+play ambassador
+['treasure-silver', 'treasure-silver', 'victory-province', 'treasure-gold', 'action-ambassador']
+36: 1, 9, 7, 8
+['action-inventor', 'action-inventor', 'action-laboratory', 'action-inventor', 'action-laboratory']
+play lab
+play lab
+play village
+play village
+play village
+play inventor
+play inventor
+play inventor
+play inventor
+['action-inventor', 'action-inventor', 'action-laboratory', 'action-inventor', 'action-laboratory', 'victory-province', 'victory-province', 'action-village', 'victory-province', 'action-village', 'action-village', 'action-inventor']
+37: 1, 1, 3
+['treasure-gold', 'treasure-silver', 'treasure-gold', 'victory-province', 'action-ambassador']
+play ambassador
+['treasure-gold', 'treasure-silver', 'treasure-gold', 'victory-province', 'action-ambassador']

@@ -33,7 +33,7 @@ def main(deckInput,deckDictionary,app):
     while "village" in hand and actions > 0:
       hand.remove("village")
       actions -= 1
-      [deck,hand,discard] = draw(deck,hand,discard,1)
+      [deck,hand,discard] = draw(deck,hand,discard,len(hand)+1)
       actions += 2
 
     while "festival" in hand and actions > 0:  
@@ -46,7 +46,7 @@ def main(deckInput,deckDictionary,app):
     while "market" in hand and actions > 0:
       hand.remove("market")
       actions -= 1
-      [deck,hand,discard] = draw(deck,hand,discard,1)
+      [deck,hand,discard] = draw(deck,hand,discard,len(hand)+1)
       actions += 1
       buys += 1
       money += 1
@@ -54,7 +54,7 @@ def main(deckInput,deckDictionary,app):
     while "smithy" in hand and actions > 0:
       hand.remove("smithy")
       actions -= 1
-      [deck,hand,discard] = draw(deck,hand,discard,3)
+      [deck,hand,discard] = draw(deck,hand,discard,len(hand)+3)
     
     for card in hand:
       if card == "gold":
@@ -85,14 +85,15 @@ def main(deckInput,deckDictionary,app):
 
 # The following code is from Raymond:
 # draws a specified number of cards to the hand
+# Note: numCardsWanted is the desired total hand size
 def draw(deck,hand,discard,numCardsWanted):
   # how many cards have been drawn
   numDrawn = len(hand)
 
   # run this if there are not enough cards in the deck
-  if(len(deck) < numCardsWanted):
+  if(len(deck) < numCardsWanted-numDrawn):
     # put the cards in the deck right now in the hand
-    hand = deck.copy()
+    hand.extend(deck.copy())
     numDrawn += len(hand)
 
     # shuffle the discard pile and make it the new deck
