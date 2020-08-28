@@ -37,9 +37,9 @@ class SingleGame:
         self.numChapel1 = 0
         self.numCopper1 = 7
         self.numEstate1 = 3
-        self.limitInventor1 = 3
+        self.limitInventor1 = 9
         self.limitVillage1 = 9
-        self.limitLaboratory1 = 8
+        self.limitLaboratory1 = 9
         self.limitChapel1 = 1
         
         self.numProvinces1 = 0
@@ -56,8 +56,8 @@ class SingleGame:
         self.numSmithy2 = 0
         self.numMarket2 = 0
         self.limitVillage2 = 10;
-        self.limitSmithy2 = 0
-        self.limitMarket2 = 0
+        self.limitSmithy2 = 2
+        self.limitMarket2 = 7
         
         self.numChapel2 = 0
         self.numMilitia2 = 0
@@ -551,12 +551,16 @@ class SingleGame:
                         self.coins -= 4
 
                 else:
-                    if(8 <= self.coins):
+                    if(self.coins >= 3 and self.numVillage2 < self.limitVillage2 and self.numVillage2 + self.numVillage1 < 10):
+                        discard.append("action-village")
+                        self.numVillage2 += 1
+                        self.coins -= 3
+                    elif(8 <= self.coins):
                         discard.append("victory-province")
                         self.coins -= 8
                         self.provinces -= 1
                         self.numProvinces2 += 1
-                    if(self.coins >= 6 and self.numGold2 < self.limitGold2):
+                    elif(self.coins >= 6 and self.numGold2 < self.limitGold2):
                         discard.append("treasure-gold")
                         if(self.numGold2 == 0):
                             self.turnGold2 = self.turnNumber
@@ -580,10 +584,7 @@ class SingleGame:
                         discard.append("action-smithy")
                         self.numSmithy2 += 1
                         self.coins -= 4
-                    elif(self.coins >= 3 and self.numVillage2 < self.limitVillage2 and self.numVillage2 + self.numVillage1 < 10):
-                        discard.append("action-village")
-                        self.numVillage2 += 1
-                        self.coins -= 3
+                    
                     elif(self.coins >= 3 and self.numSilver2 < self.limitSilver2):
                         discard.append("treasure-silver")
                         self.numSilver2 += 1
