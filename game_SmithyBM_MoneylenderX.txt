@@ -1,0 +1,100 @@
+1: 8, 0, 8
+['victory-estate', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-copper']
+['victory-estate', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-copper']
+2: 8, 0, 8
+['treasure-copper', 'treasure-copper', 'victory-estate', 'victory-estate', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'victory-estate', 'victory-estate', 'treasure-copper']
+3: 8, 0, 8
+['victory-estate', 'victory-estate', 'treasure-copper', 'treasure-copper', 'treasure-copper']
+['victory-estate', 'victory-estate', 'treasure-copper', 'treasure-copper', 'treasure-copper']
+4: 8, 1, 8
+['treasure-copper', 'treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper']
+5: 8, 1, 8
+['victory-estate', 'action-moneylender', 'treasure-copper', 'treasure-copper', 'treasure-copper']
+play moneylender
+['victory-estate', 'action-moneylender', 'treasure-copper', 'treasure-copper']
+6: 8, 1, 8
+['treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'victory-estate']
+['treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'victory-estate']
+7: 8, 2, 8
+['treasure-copper', 'treasure-silver', 'victory-estate', 'victory-estate', 'treasure-copper']
+['treasure-copper', 'treasure-silver', 'victory-estate', 'victory-estate', 'treasure-copper']
+8: 8, 1, 8
+['victory-estate', 'treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-silver']
+['victory-estate', 'treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-silver']
+9: 8, 3, 8
+['treasure-copper', 'treasure-copper', 'treasure-copper', 'action-moneylender', 'treasure-copper']
+play moneylender
+['treasure-copper', 'treasure-copper', 'action-moneylender', 'treasure-copper']
+10: 8, 2, 8
+['action-smithy', 'treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-silver']
+['action-smithy', 'treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-silver', 'victory-estate', 'treasure-copper', 'action-smithy']
+11: 8, 3, 8
+['treasure-copper', 'victory-estate', 'victory-estate', 'treasure-copper', 'treasure-silver']
+['treasure-copper', 'victory-estate', 'victory-estate', 'treasure-copper', 'treasure-silver']
+12: 8, 3, 8
+['treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-silver', 'treasure-copper']
+['treasure-copper', 'treasure-copper', 'treasure-copper', 'treasure-silver', 'treasure-copper']
+13: 8, 4, 8
+['victory-estate', 'treasure-silver', 'treasure-silver', 'treasure-copper', 'treasure-silver']
+['victory-estate', 'treasure-silver', 'treasure-silver', 'treasure-copper', 'treasure-silver']
+14: 8, 3, 8
+['victory-estate', 'treasure-copper', 'treasure-gold', 'action-smithy', 'treasure-copper']
+['victory-estate', 'treasure-copper', 'treasure-gold', 'action-smithy', 'treasure-copper', 'treasure-silver', 'treasure-silver', 'action-smithy']
+15: 7, 4, 8
+['treasure-gold', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'victory-estate']
+['treasure-gold', 'treasure-copper', 'treasure-copper', 'treasure-copper', 'victory-estate']
+16: 7, 3, 8
+['victory-estate', 'treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper']
+['victory-estate', 'treasure-copper', 'treasure-copper', 'victory-estate', 'treasure-copper']
+17: 7, 4, 8
+['victory-estate', 'action-moneylender', 'treasure-copper', 'treasure-silver', 'treasure-gold']
+play moneylender
+['victory-estate', 'action-moneylender', 'treasure-silver', 'treasure-gold']
+18: 6, 4, 8
+['treasure-copper', 'treasure-copper', 'treasure-silver', 'treasure-copper', 'victory-estate']
+['treasure-copper', 'treasure-copper', 'treasure-silver', 'treasure-copper', 'victory-estate']
+19: 6, 4, 8
+['treasure-silver', 'victory-estate', 'victory-estate', 'treasure-gold', 'treasure-copper']
+['treasure-silver', 'victory-estate', 'victory-estate', 'treasure-gold', 'treasure-copper']
+20: 6, 5, 8
+['victory-estate', 'action-smithy', 'treasure-copper', 'treasure-copper', 'treasure-silver']
+['victory-estate', 'action-smithy', 'treasure-copper', 'treasure-copper', 'treasure-silver', 'treasure-copper', 'treasure-gold', 'treasure-copper']
+21: 5, 4, 8
+['treasure-silver', 'treasure-gold', 'treasure-copper', 'treasure-copper', 'treasure-copper']
+['treasure-silver', 'treasure-gold', 'treasure-copper', 'treasure-copper', 'treasure-copper']
+22: 4, 5, 8
+['victory-estate', 'action-smithy', 'victory-province', 'treasure-silver', 'treasure-silver']
+['victory-estate', 'action-smithy', 'victory-province', 'treasure-silver', 'treasure-silver', 'victory-province', 'treasure-copper']
+23: 4, 4, 7
+['treasure-silver', 'treasure-silver', 'treasure-gold', 'treasure-gold', 'victory-estate']
+['treasure-silver', 'treasure-silver', 'treasure-gold', 'treasure-gold', 'victory-estate']
+24: 3, 5, 7
+['treasure-copper', 'action-smithy', 'treasure-copper', 'treasure-gold', 'treasure-copper']
+['treasure-copper', 'action-smithy', 'treasure-copper', 'treasure-gold', 'treasure-copper', 'victory-estate', 'treasure-copper', 'treasure-copper']
+25: 2, 4, 7
+['treasure-gold', 'treasure-copper', 'victory-estate', 'treasure-copper', 'victory-province']
+['treasure-gold', 'treasure-copper', 'victory-estate', 'treasure-copper', 'victory-province']
+26: 2, 5, 6
+['treasure-silver', 'treasure-silver', 'treasure-copper', 'treasure-silver', 'victory-estate']
+['treasure-silver', 'treasure-silver', 'treasure-copper', 'treasure-silver', 'victory-estate']
+27: 2, 4, 6
+['victory-estate', 'victory-province', 'treasure-silver', 'treasure-silver', 'treasure-copper']
+['victory-estate', 'victory-province', 'treasure-silver', 'treasure-silver', 'treasure-copper']
+28: 2, 5, 5
+['treasure-silver', 'victory-duchy', 'treasure-copper', 'victory-estate', 'victory-province']
+['treasure-silver', 'victory-duchy', 'treasure-copper', 'victory-estate', 'victory-province']
+29: 2, 4, 5
+['action-moneylender', 'treasure-copper', 'treasure-gold', 'treasure-gold', 'victory-province']
+play moneylender
+['action-moneylender', 'treasure-gold', 'treasure-gold', 'victory-province']
+30: 1, 6, 5
+['victory-estate', 'treasure-silver', 'treasure-copper', 'treasure-copper', 'victory-province']
+['victory-estate', 'treasure-silver', 'treasure-copper', 'treasure-copper', 'victory-province']
+31: 1, 4, 5
+['treasure-silver', 'treasure-copper', 'victory-duchy', 'treasure-silver', 'treasure-silver']
+['treasure-silver', 'treasure-copper', 'victory-duchy', 'treasure-silver', 'treasure-silver']
+32: 1, 7, 5
+['treasure-gold', 'victory-estate', 'action-smithy', 'treasure-silver', 'treasure-silver']
+['treasure-gold', 'victory-estate', 'action-smithy', 'treasure-silver', 'treasure-silver', 'treasure-copper', 'treasure-silver', 'action-smithy']

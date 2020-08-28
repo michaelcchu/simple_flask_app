@@ -47,6 +47,8 @@ class SingleGame:
         self.numSilver1 = 0
         self.turnGold1 = 0
 
+        self.numCurse1 = 0
+
         # player 2
         self.numFestival2 = 0
         self.numSmithy2 = 0
@@ -69,6 +71,8 @@ class SingleGame:
         self.numSilver2 = 0
 
         self.limitSilver2 = 2
+
+        self.numCurse2 = 0
 
     # simulates "inventor" game
     def simulateRun(self):

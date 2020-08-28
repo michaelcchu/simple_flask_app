@@ -40,8 +40,12 @@ def main(name):
         game = i.SingleGame()
         game.simulateRun()
 
-        p1Score = game.numProvinces1 * 6 + game.numDuchies1 * 3 + game.numEstate1 - game.numCurse1
-        #p1Score = int((len(game.deck1) + len(game.discard1) + len(game.hand1)) / 10) * game.numGarden1 + game.numEstate1
+        # Different scoring method for workshop garden simulations
+        if name.startswith("WkspGar"):
+            p1Score = int((len(game.deck1) + len(game.discard1) + len(game.hand1)) / 10) * game.numGarden1 + game.numEstate1
+        else:
+            p1Score = game.numProvinces1 * 6 + game.numDuchies1 * 3 + game.numEstate1 - game.numCurse1
+    
         totalPoints1 += p1Score
         points1.append(p1Score)
 
@@ -72,11 +76,6 @@ def main(name):
 
         totalGameLength += int((game.turnNumber / 2))
         gameLengths.append(int((game.turnNumber / 2)))
-
-        #totalVillage1 += game.numVillage1
-        #totalVillage2 += game.numVillage2
-
-        #totalInventor1 += game.numInventor1
 
     text = []
     text.append("Player 1 Winrate: " + str(wins1 / NUM_RUNS))

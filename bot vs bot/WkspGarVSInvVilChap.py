@@ -32,7 +32,7 @@ class SingleGame:
         # player 1
         self.numWorkshop = 0
         self.stopWorkshop = 10
-        self.numGarden = 0
+        self.numGarden1 = 0
         self.numEstate1 = 3
 
         self.numSilver1 = 0
@@ -60,6 +60,8 @@ class SingleGame:
 
         self.trashedEstate = 0
 
+        self.numCurse2 = 0
+        
     # simulates "inventor" game
     def simulateRun(self):
         self.shuffleDeck(1)
@@ -71,7 +73,7 @@ class SingleGame:
 
         if(self.numWorkshop == 10):
             emptyPiles += 1
-        if(self.numGarden == 8):
+        if(self.numGarden1 == 8):
             emptyPiles += 1
         if(self.numEstate1 + self.numEstate2 + self.trashedEstate == 14):
             emptyPiles += 1
@@ -92,7 +94,7 @@ class SingleGame:
 
             if(self.numWorkshop == 10):
                 emptyPiles += 1
-            if(self.numGarden == 8):
+            if(self.numGarden1 == 8):
                 emptyPiles += 1
             if(self.numEstate1 + self.numEstate2 + self.trashedEstate == 14):
                 emptyPiles += 1
@@ -117,7 +119,7 @@ class SingleGame:
         self.coins = 0
 
         if(self.currentPlayer == 1):
-            self.file.write(str(self.turnNumber) + ": " + str(self.numWorkshop) + ", " + str(self.numGarden) + ", " + str(self.numEstate1) + "\n") 
+            self.file.write(str(self.turnNumber) + ": " + str(self.numWorkshop) + ", " + str(self.numGarden1) + ", " + str(self.numEstate1) + "\n") 
             hand = self.hand1
         else:
             self.file.write(str(self.turnNumber) + ": " + str(self.provinces) + ", " + str(self.numInventor) + ", " + str(self.numVillage) + ", " + str(self.numLaboratory) + ", " + str(self.duchies) + "\n")
@@ -160,8 +162,8 @@ class SingleGame:
                 if(self.numWorkshop < self.stopWorkshop):
                     self.numWorkshop += 1
                     discard.append("action-workshop")
-                elif(self.numGarden < 8):
-                    self.numGarden += 1
+                elif(self.numGarden1 < 8):
+                    self.numGarden1 += 1
                     discard.append("victory-garden")
                 elif(self.numWorkshop < 10):
                     self.numWorkshop += 1
@@ -316,8 +318,8 @@ class SingleGame:
                         self.numWorkshop += 1
                         discard.append("action-workshop")
                         self.coins -= 3
-                    elif(self.numGarden < 8):
-                        self.numGarden += 1
+                    elif(self.numGarden1 < 8):
+                        self.numGarden1 += 1
                         discard.append("victory-garden")
                         self.coins -= 4
                     elif(self.numWorkshop < 10):
