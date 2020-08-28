@@ -6,7 +6,7 @@ import datetime
 import random
 
 HANDSIZE = 5
-NUM_SIM = 1000
+NUM_SIM = 10000
 
 ## Deck -> PieChart
 ## Calculates the probability of getting every possible amount of money from a draw.
@@ -135,5 +135,3 @@ def generatePieChart(deckDictionary,probs,money,app):
   plt.savefig(os.path.join(app.root_path,'static/'+newFilename))
   plt.clf()
   return newFilename
-
-#main({"silver":1,"gold":3,"estate":4})

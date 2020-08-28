@@ -148,5 +148,3 @@ def generatePieChart(deck,hands,probs,money,app):
   plt.savefig(os.path.join(app.root_path,'static/'+newFilename))
   plt.clf()
   return newFilename
-
-#main({"silver":1,"gold":3,"estate":4})

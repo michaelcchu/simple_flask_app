@@ -4,7 +4,7 @@ import statistics
 def main(name):
     i = importlib.import_module("bot vs bot."+name)
 
-    NUM_RUNS = 100
+    NUM_RUNS = 10000
 
     wins1 = 0
     wins2 = 0
@@ -86,8 +86,17 @@ def main(name):
     text.append("Player 2 Points Standard Deviation: " + str(statistics.stdev(points2)))
     text.append("Player 1 Average Margin of Victory: " + str(totalMarginOfVictory1 / NUM_RUNS))
     text.append("Player 2 Average Margin of Victory: " + str(totalMarginOfVictory2 / NUM_RUNS))
-    text.append("Player 1 Margin of Victory Standard Deviation: " + str(statistics.stdev(marginOfVictories1)))
-    text.append("Player 2 Margin of Victory Standard Deviation: " + str(statistics.stdev(marginOfVictories2)))
+
+    if wins1 > 0: 
+        text.append("Player 1 Margin of Victory Standard Deviation: " + str(statistics.stdev(marginOfVictories1)))
+    else:
+        text.append("Player 1 Margin of Victory Standard Deviation: " + "N/A")
+
+    if wins2 > 0:
+        text.append("Player 2 Margin of Victory Standard Deviation: " + str(statistics.stdev(marginOfVictories2)))
+    else:
+        text.append("Player 2 Margin of Victory Standard Deviation: " + "N/A")
+
     text.append("Player 1 Average Silvers: " + str(totalSilver1 / NUM_RUNS))
     text.append("Player 2 Average Silvers: " + str(totalSilver2 / NUM_RUNS))
     text.append("Player 1 Silvers Standard Deviation: " + str(statistics.stdev(silvers1)))
@@ -100,5 +109,3 @@ def main(name):
     text.append("Game Length Standard Deviation: " + str(statistics.stdev(gameLengths)))
 
     return text
-
-#print(main("InvVilLabChapVSVilAmb"))
