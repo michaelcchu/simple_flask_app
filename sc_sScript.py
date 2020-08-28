@@ -4,7 +4,7 @@ import statistics
 def main(name):
     i = importlib.import_module("bot vs bot."+name)
 
-    NUM_RUNS = 10000
+    NUM_RUNS = 1000
 
     wins1 = 0
     wins2 = 0
