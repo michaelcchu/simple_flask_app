@@ -1,6 +1,9 @@
 <html>
   <head>
     <title>Dominion Tool - Strategy Comparison - Simulation</title>
+    <style>
+      #home {border: 2px solid black}
+    </style>
   </head>
 
   <body>
@@ -10,6 +13,7 @@
     <h2>Strategy Comparison - Simulation</h2>
   
     <p>Instructions: Choose a simulation and click run to see who wins!</p>
+    <p>The player with the higher winrate will be highlighted.</p>
     <p>Note: Many simulations may take around 10-15 seconds to run.</p>
     <p>Abbreviations:</p>
     <ul>
@@ -53,8 +57,14 @@
 
     {% if display %}
       <p>Simulation: {{ request.form['simChoice'] }}</p>
-      {% for para in text %}
-        <p>{{para}}</p>
+      {% for i in range(0,text|length) %}
+        {% if text[i][:"Player 1 Winrate:"|length]=="Player 1 Winrate:" and (text[i]["Player 1 Winrate:"|length:])|float > (text[i+1]["Player 2 Winrate:"|length:])|float %}
+          <p><mark>Player 1</mark> Winrate:{{text[i]["Player 1 Winrate:"|length:]}}</p>
+        {% elif text[i][:"Player 2 Winrate:"|length]=="Player 2 Winrate:" and (text[i]["Player 2 Winrate:"|length:])|float > (text[i-1]["Player 1 Winrate:"|length:])|float %}
+          <p><mark>Player 2</mark> Winrate:{{text[i]["Player 2 Winrate:"|length:]}}</p>
+        {% else %}
+          <p>{{text[i]}}</p>
+        {% endif %}
       {% endfor %}
     {% endif %}
 

@@ -120,7 +120,12 @@ def shuffleDeck(deck):
 ## Probs, Money -> PieChart
 ## Produces a pie chart 
 def generatePieChart(deckDictionary,probs,money,app):
-  plt.pie(probs, labels=money, autopct='%1.1f%%')
+  # Add dollar signs to the money
+  moneyWithDollars = []
+  for element in money:
+    moneyWithDollars.append("$"+str(element))
+
+  plt.pie(probs, labels=moneyWithDollars, autopct='%1.1f%%')
   plt.suptitle("Deck: "+str(deckDictionary)+"\nHow much money will I obtain from my next draw?")
 
   timeString = str(datetime.datetime.now())

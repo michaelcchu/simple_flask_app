@@ -2,13 +2,22 @@
 <html>
 <head>
   <title>Dominion Tool</title>
+  <style>
+    #mpc-m {border: 2px solid black; background-color: #f44336}
+    #mpc-s {border: 2px solid black; background-color: #FFFF66}
+    #hpc-m {border: 2px solid black; background-color: #008CBA}
+    #sc-s {border: 2px solid black; background-color:	#4CAF50}
+  </style>
 </head>
 <body>
   <h1>Dominion Tool</h1>
+  <p>Click one of the buttons below to start.</p>
   <button id="mpc-m">Money Probability Calculator - Mathematical</button>
   <button id="mpc-s">Money Probability Calculator - Simulation</button>
   <button id="hpc-m">Hand Probability Calculator - Mathematical</button>
   <button id="sc-s">Strategy Comparison - Simulation</button>
+  <p></p>
+  <img src="{{ url_for('static', filename = 'dominionGameBox.jpg') }}"/>
 
   <script>
     document.getElementById("mpc-m").addEventListener("click",function(){document.location.href = '/mpc_m';})

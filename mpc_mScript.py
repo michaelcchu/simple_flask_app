@@ -133,7 +133,13 @@ def condense(money,probs):
 ## Hand -> PieChart
 ## Produces a pie chart 
 def generatePieChart(deck,hands,probs,money,app):
-  plt.pie(probs, labels=money, autopct='%1.1f%%')
+  
+  # Add dollar signs to the money
+  moneyWithDollars = []
+  for element in money:
+    moneyWithDollars.append("$"+str(element))
+
+  plt.pie(probs, labels=moneyWithDollars, autopct='%1.1f%%')
   plt.suptitle("Deck: "+str(deck)+"\nHow much money will I obtain from my next draw?")
 
   timeString = str(datetime.datetime.now())
